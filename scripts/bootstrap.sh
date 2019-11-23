@@ -10,3 +10,8 @@ yum -y install socat
 cd /etc/yum.repos.d/
 wget  https://yum.boundlessps.com/geoshape.repo
 yum -y install geoshape geoshape-geoserver elasticsearch postgis-postgresql95 rabbitmq-server-3.6.1
+geoshape-config init 192.168.99.110 << EOF
+admin
+admin
+EOF
+# /var/lib/geonode/rogue_geonode/geoshape/static/img
